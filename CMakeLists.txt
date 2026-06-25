@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(wasmFront C)
-set(CMAKE_BUILD_TYPE Debug)
+option(CMAKE_BUILD_TYPE "Build Type" Debug)
 
 include(FetchContent)
 
