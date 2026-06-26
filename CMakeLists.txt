@@ -13,13 +13,6 @@ FetchContent_Declare(
     GIT_PROGRESS TRUE
 )
 
-FetchContent_Declare(
-    wasmi
-    GIT_REPOSITORY "https://github.com/wasmi-labs/wasmi.git"
-    GIT_TAG "main"
-    GIT_PROGRESS TRUE
-)
-
 FetchContent_MakeAvailable(raylib)
 add_subdirectory(wasmi/crates/c_api )
 file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_LIST_DIR}/src/*.c")
